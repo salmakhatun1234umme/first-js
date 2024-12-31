@@ -7,10 +7,12 @@ if(baby<=5){
     console.log('baby you are free')
 }
 else if(oldMan<=50 && isIdCard==true){
-    console.log('old man you are free')
+    const disCount=buy*50/100;
+    const pay=buy-disCount;
+    console.log(pay)
 }
 else if(coponCart==true){
-   const disCount=buy*10/100;
+   const disCount=buy*25/100;
    const pay=buy-disCount;
    console.log(pay);
 }
