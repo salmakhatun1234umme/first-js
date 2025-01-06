@@ -22,7 +22,7 @@ else {
 
 
 // question no 2
-let number = 50;
+let number = -50;
 
 if (number > 0) {
     console.log(`${number} You are positive number`)
@@ -37,13 +37,13 @@ else {
 
 
 // question no 3 
-let time = 12;
+let time =18; 
 
 if (time < 12) {
-    console.log(`${time}good morning`);
+    console.log(`${time} good morning`);
 }
 
-else if (time >= 12 && time < 17) {
+else if (time >= 12 && time <= 17) {
     console.log(`${time} good evening`)
 }
 else {
