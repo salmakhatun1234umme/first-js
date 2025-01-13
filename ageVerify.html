@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 25px;
+      }
+      input,
+      button {
+        font-size: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Your Age Verification</h1>
+    <input type="number" name="" id="ageInput" placeholder="Write Your age" />
+    <button onclick="ageCheck()">Check</button>
+    <p id="result">demo</p>
+
+    <script>
+      function ageCheck() {
+        const age = document.getElementById("ageInput").value;
+        const result = document.getElementById("result");
+
+        if (age === "") {
+          result.textContent = "Write Your Age First";
+        } else if (age >= 18 && age<=60) {
+          result.textContent = "You are Matured";
+        } else if (age > 60) {
+          result.textContent = "You are Old Man";
+        } else {
+          result.textContent = "You are Child";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odd Even Number</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 25px;
+      }
+      input,
+      button {
+        font-size: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Odd - Even Checker</h1>
+    <input type="number" name="" id="ageInput" placeholder="Write a number" />
+    <button onclick="oddEvenCheck()">Check</button>
+    <p id="result">demo</p>
+
+
+    <script>
+        function oddEvenCheck() {
+          const age = document.getElementById("ageInput").value;
+          const result = document.getElementById("result");
+           if(age===''){
+            result.textContent = "Write a number";
+          }
+          else if(age%2===0){
+            result.textContent = "It is even Number";
+          }
+          else{
+            result.textContent = "It is odd Number";
+          }
+  
+        }
+      </script>
+  </body>
+</html>
